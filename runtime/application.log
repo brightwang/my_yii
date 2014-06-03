@@ -1,0 +1,319 @@
+2013/11/27 10:07:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/about
+---
+2013/11/27 10:07:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/about
+---
+2013/11/27 10:13:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/demo')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/demo
+---
+2013/11/27 10:14:55 [error] [php] include(APIBaseController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/httpd/html/my_yii/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/httpd/html/my_yii/framework_extension/protected/controllers/SiteController.php(4): spl_autoload_call()
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(354): require()
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/httpd/html/my_yii/framework_extension/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/demo
+2013/11/27 10:24:28 [error] [exception.CException] exception 'CException' with message 'CAPIInlineAction and its behaviors do not have a method or closure named "json_exit".' in /home/httpd/html/my_yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/httpd/html/my_yii/framework_extension/protected/components/OpenApi/CAPIInlineAction.php(61): CComponent->__call('json_exit', Array)
+#1 /home/httpd/html/my_yii/framework_extension/protected/components/OpenApi/CAPIInlineAction.php(61): CAPIInlineAction->json_exit(1000, 'Sucess', 'hello')
+#2 /home/httpd/html/my_yii/framework/web/CController.php(308): CAPIInlineAction->runWithParams(Array)
+#3 /home/httpd/html/my_yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CAPIInlineAction))
+#4 /home/httpd/html/my_yii/framework_extension/protected/components/OpenApi/APIBaseController.php(27): CFilterChain->run()
+#5 /home/httpd/html/my_yii/framework/web/filters/CInlineFilter.php(58): APIBaseController->filterParameterVerifier(Object(CFilterChain))
+#6 /home/httpd/html/my_yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/httpd/html/my_yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/httpd/html/my_yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CAPIInlineAction), Array)
+#9 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo')
+#10 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/demo')
+#11 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/site/demo
+---
+2013/11/27 10:40:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/11/27 10:40:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demo.desc".' in /home/httpd/html/my_yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CController.php(270): CController->missingAction('demo.desc')
+#1 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): CController->run('demo.desc')
+#2 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apidemo/demo.de...')
+#3 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apidemo/demo.desc
+---
+2013/12/12 17:24:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dDD".' in /home/httpd/html/my_yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('dDD')
+#1 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dDD
+---
+2013/12/12 17:24:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ddd".' in /home/httpd/html/my_yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ddd')
+#1 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ddd
+---
+2013/12/12 17:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ddd".' in /home/httpd/html/my_yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ddd')
+#1 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ddd
+---
+2013/12/12 17:24:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ddd".' in /home/httpd/html/my_yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ddd')
+#1 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ddd
+---
+2013/12/12 17:24:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ddd".' in /home/httpd/html/my_yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ddd')
+#1 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ddd
+---
+2013/12/12 17:24:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ddd".' in /home/httpd/html/my_yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ddd')
+#1 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ddd
+---
+2013/12/12 17:24:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ddd".' in /home/httpd/html/my_yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ddd')
+#1 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ddd
+---
+2013/12/12 17:24:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ddd".' in /home/httpd/html/my_yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ddd')
+#1 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ddd
+---
+2013/12/12 17:24:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ddd".' in /home/httpd/html/my_yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ddd')
+#1 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ddd
+---
+2013/12/12 17:24:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ddd".' in /home/httpd/html/my_yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ddd')
+#1 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ddd
+---
+2013/12/12 17:24:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ddd".' in /home/httpd/html/my_yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ddd')
+#1 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ddd
+---
+2013/12/12 17:25:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ddd".' in /home/httpd/html/my_yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ddd')
+#1 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/httpd/html/my_yii/framework_extension/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ddd
+---
+2014/05/14 12:52:19 [error] [php] Undefined index: signature (/home/httpd/html/my_yii/framework_extension/protected/controllers/WeiXinController.php:21)
+Stack trace:
+#0 /home/httpd/html/my_yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /home/httpd/html/my_yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /home/httpd/html/my_yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/httpd/html/my_yii/framework/web/filters/CFilterChain.php(133): WeiXinController->runAction()
+#4 /home/httpd/html/my_yii/framework_extension/protected/components/OpenApi/BaseController.php(25): CFilterChain->run()
+#5 /home/httpd/html/my_yii/framework/web/filters/CInlineFilter.php(58): WeiXinController->filterParameterVerifier()
+#6 /home/httpd/html/my_yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /home/httpd/html/my_yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/httpd/html/my_yii/framework/web/CController.php(265): WeiXinController->runActionWithFilters()
+#9 /home/httpd/html/my_yii/framework/web/CWebApplication.php(282): WeiXinController->run()
+#10 /home/httpd/html/my_yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /home/httpd/html/my_yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/httpd/html/my_yii/framework_extension/index.php(13): CWebApplication->run()
+REQUEST_URI=/weiXin/apply
